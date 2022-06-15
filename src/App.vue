@@ -1,6 +1,15 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 in CodeSandbox!" />
+  <ul>
+    <li>
+      <router-link :to="{ path: '/' }">Home</router-link>
+    </li>
+    <li>
+      <router-link :to="{ path: 'about' }">About</router-link>
+    </li>
+  </ul>
+  <router-view></router-view>
 </template>
 
 <script>
